@@ -22,8 +22,8 @@ class Genre
 
   def artists
     Artist.all.select do |artist|
-      binding.pry
       artist.genres.select do |genre|
+        
       end
     end
   end
