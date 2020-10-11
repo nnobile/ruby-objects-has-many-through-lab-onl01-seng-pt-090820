@@ -27,6 +27,7 @@ def doctors
       patient == self
     end
   end
+end
 
 
 end
