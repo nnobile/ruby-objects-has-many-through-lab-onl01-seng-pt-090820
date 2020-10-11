@@ -21,8 +21,10 @@ class Genre
   end
 
   def artists
-    Artist.all do |artist|
+    Artist.all.select do |artist|
     end
+  end
+    
 
 
 
@@ -30,6 +32,6 @@ class Genre
       #song.artist
   #end
   #binding.pry
-end
+
 
 end
