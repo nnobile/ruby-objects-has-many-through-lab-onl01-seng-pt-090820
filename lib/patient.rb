@@ -26,3 +26,5 @@ end
       appointment.doctor
     end
   end
+
+end
