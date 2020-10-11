@@ -21,9 +21,9 @@ class Genre
   end
 
   def artists
-    musician = songs.select do |song|
-      song.artist
-  end
+    #musician = songs.select do |song|
+      #song.artist
+  #end
   binding.pry
 end
 
