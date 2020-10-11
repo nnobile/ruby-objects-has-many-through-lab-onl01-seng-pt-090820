@@ -24,7 +24,7 @@ class Genre
     Artist.all.select do |artist|
     end
   end
-    
+
 
 
 
