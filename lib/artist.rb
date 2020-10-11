@@ -26,13 +26,13 @@ class Artist
     end
   end
 
-  def genres
-    Genre.all.select do |genre|
-      genre.songs.select do |song|
-        #binding.pry
-        song.artist == self
-      end
-    end
-  end
+  # def genres
+  #   Genre.all.select do |genre|
+  #     genre.songs.select do |song|
+  #       #binding.pry
+  #       song.artist == self
+  #     end
+  #   end
+  # end
 
 end
