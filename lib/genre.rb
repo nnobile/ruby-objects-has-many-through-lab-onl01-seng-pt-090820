@@ -21,10 +21,10 @@ class Genre
   end
 
   def artists
-    songs.select do |song|
-      binding.pry
+    musician = songs.select do |song|
       song.artist
   end
+  binding.pry
 end
 
 end
