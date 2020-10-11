@@ -19,7 +19,7 @@ class Genre
   end
 
   def artists
-    artists.map do |artist|
+    Artist.map do |artist|
       artist.genre
   end
 end
