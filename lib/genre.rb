@@ -21,6 +21,11 @@ class Genre
   end
 
   def artists
+    Artist.all do |artist|
+    end
+
+
+
     #musician = songs.select do |song|
       #song.artist
   #end
