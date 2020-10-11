@@ -30,7 +30,8 @@ class Artist
       binding.pry
       genre.songs.select do |song|
         song.artist == self
+      end
+    end
   end
-end
 
 end
