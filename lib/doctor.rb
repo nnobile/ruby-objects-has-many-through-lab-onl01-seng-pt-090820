@@ -21,14 +21,6 @@ class Doctor
       appointment.doctor == self
   end
 
-  def appointments
-    Song.all.select do |song|
-      song.artist == self
-      #binding.pry
-    end
-  end
-
-
 
   def patients
     self.appointments.map do |appointment|
