@@ -1,3 +1,5 @@
+require 'pry'
+
 class Genre
   attr_accessor :name
 
@@ -19,9 +21,20 @@ class Genre
   end
 
   def artists
-    artists.map do |artist|
-      artist.genre
+    Artist.all.select do |artist|
+      artist.genres.select do |genre|
+        genre == self
+      end
+    end
   end
-end
+
+
+
+
+    #musician = songs.select do |song|
+      #song.artist
+  #end
+  #binding.pry
+
 
 end

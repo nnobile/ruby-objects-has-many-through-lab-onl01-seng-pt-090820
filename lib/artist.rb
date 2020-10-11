@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist
   attr_accessor :name
 
@@ -13,19 +15,28 @@ class Artist
   end
 
   def new_song(name, genre)
-    Song.new(self, name, genre)
+    Song.new(name, self, genre)
+    #binding.pry
   end
 
   def songs
     Song.all.select do |song|
       song.artist == self
+      #binding.pry
     end
   end
 
   def genres
-    genres.map do |genre|
-      genre.artist
+    self.songs.map do |song|
+      song.genre
+      #binding.pry
+    end
+  #Genre.all.select do |genre|
+  #     genre.songs.select do |song|
+  #       #binding.pry
+  #       song.artist == self
+  #     end
+  #   end
   end
-end
 
 end
