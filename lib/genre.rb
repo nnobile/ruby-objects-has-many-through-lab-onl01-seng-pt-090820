@@ -24,7 +24,7 @@ class Genre
     #musician = songs.select do |song|
       #song.artist
   #end
-  binding.pry
+  #binding.pry
 end
 
 end
